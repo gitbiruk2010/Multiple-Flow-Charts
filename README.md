@@ -1,4 +1,4 @@
-# Fitness Tracker App - Project Management Simulation
+# Fitness Tracker App Project Management - Multiple Flow Charts
 ![image](https://github.com/user-attachments/assets/82caeb7b-00b3-4e00-8aab-cdc929ed5237)
 ![image](https://github.com/user-attachments/assets/d272ae84-750a-4f31-8635-f5f6d3617c06)
 ![image](https://github.com/user-attachments/assets/c7d96079-0954-4b07-b542-e0d497ca1526)
@@ -8,29 +8,46 @@
 ![image](https://github.com/user-attachments/assets/fd8884b5-e635-4310-8ffe-ad25aad23203)
 
 
-## Overview
-This project is a **hypothetical application development simulation** designed to demonstrate **project management techniques** using **Work Breakdown Structure (WBS), Gantt Charts, and Kanban Boards**. The goal is to simulate task organization, dependencies, and project progress tracking.
+A hypothetical software development project for a Fitness Tracker App that integrates wearable device data, workout tracking, and user analytics. This repository documents the project's flowcharts, architecture, and development lifecycle.
 
-## Project Structure
-- **Work Breakdown Structure (WBS)**: Tasks are grouped into **Planning, Design, Development, Testing, Deployment, and Post-Launch** to create a logical workflow.
-- **Gantt Chart**: Visual timeline showing **task durations, dependencies, and milestones**.
-- **Kanban Board**: Tasks categorized into **Backlog, To-Do, In Progress, Blocked, and Completed** to monitor real-time progress.
+---
 
-## Key Deliverables
-- **Project Scope & Objectives**
-- **UI/UX Wireframes & Mockups**
-- **Backend Development & API Integration**
-- **Testing & Bug Fixes**
-- **App Deployment & Post-Launch Updates**
+## Project Overview
+The Fitness Tracker App enables users to:
+- Track daily steps, heart rate, and calories burned.
+- Sync data with wearable devices (e.g., Fitbit, Apple Watch).
+- View personalized workout recommendations.
+- Analyze fitness progress through interactive dashboards.
 
-## Task Prioritization
-Tasks were prioritized based on **dependencies and resource constraints**, ensuring that critical components like **backend setup and authentication** were completed before dependent tasks such as **API integration** and **UI development**.
+---
 
-## How to Use This Repository
-- View the **WBS structure** to understand task breakdown.
-- Check the **Gantt Chart** for project timeline and dependencies.
-- Use the **Kanban Board** to track task progress.
-- Modify the project plan based on different project scenarios.
+## Flowcharts
 
-## Conclusion
-This simulation showcases effective project management strategies, providing insight into **workflow planning, resource allocation, and progress tracking** for application development.
+### 1. **Basic Flow Chart (SDLC Overview)**
+- **Purpose**: High-level view of the software development lifecycle.
+- **Flow**:  
+  `Start → Requirement Gathering → Design → Development → Testing → Deployment → End`  
+- **Key Insight**: Linear phases highlight core milestones but exclude iterative feedback loops.
+
+### 2. **System Flow Chart (Architecture)**
+- **Purpose**: Illustrate component interactions.  
+- **Flow**:  
+  `Mobile App → API Gateway → Backend Server → Database`  
+  `Wearable Devices → External APIs (Google Fit/Apple HealthKit)`  
+- **Key Insight**: API Gateway scalability is critical for handling user data synchronization.
+
+### 3. **Workflow Diagram (Feature Development)**
+- **Purpose**: Map roles and tasks for feature implementation (e.g., "Sleep Tracking").  
+- **Flow**:  
+  `Product Manager → Designer → Developer → QA → DevOps`  
+- **Key Insight**: Delays in design handoffs can block development progress.
+
+### 4. **Data Flow Chart**
+- **Purpose**: Track fitness data from collection to storage.  
+- **Flow**:  
+  `Wearable Device → Mobile App → Backend → Database → Analytics Dashboard`  
+- **Key Insight**: Data encryption at the API Gateway ensures user privacy.
+
+### 5. **Decision Flow Chart (User Interaction)**
+- **Purpose**: Model conditional logic (e.g., workout recommendations).  
+- **Flow**:  
